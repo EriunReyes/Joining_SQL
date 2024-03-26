@@ -1,0 +1,31 @@
+
+SELECT name, grade
+FROM high_school_students
+UNION
+SELECT name, grade
+FROM middle_school_students
+
+
+
+SELECT name, grade
+FROM high_school_students
+UNION ALL
+SELECT name, grade
+FROM middle_school_students
+
+
+
+SELECT name, grade
+FROM high_school_students
+INTERSECT
+SELECT name, grade
+FROM middle_school_students
+
+
+
+SELECT name, grade
+FROM high_school_students
+EXCEPT
+SELECT name, grade
+FROM middle_school_students
+
